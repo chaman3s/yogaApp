@@ -1,9 +1,10 @@
 import './NavLink.css';
 
-function NavLink({ href, children, active = false, className = '' }) {
+function NavLink({ href, children, active = false, className = '', onClick }) {
   return (
     <a 
-      href={href} 
+      href={href}
+      onClick={onClick}
       className={`nav-link ${active ? 'active' : ''} ${className}`}
     >
       {children}
