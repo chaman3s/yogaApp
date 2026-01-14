@@ -7,27 +7,38 @@ import CardGrid from './components/ui/CardGrid'
 import PromoCard from './components/PromoCard'
 import Tabs from './components/ui/Tabs'
 
+import img1 from './assets/1.png'
+import img2 from './assets/2.jpg'
+import img3 from './assets/3.jpg'
+import img4 from './assets/4.jpg'
+import img5 from './assets/5.jpg'
+import img6 from './assets/6.jpg'
+import img7 from './assets/7.jpg'
+import img8 from './assets/8.jpg'
+import img9 from './assets/9.jpg'
+import img10 from './assets/10.jpg'
+
+
 function App() {
   const [activeTab, setActiveTab] = useState('Yoga Talks');
 
   const yogaTeacherTraining = [
-    { id: 1, title: 'Day 01 - Warm Up', subtitle: '07:00 - 08:00 AM', image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400' },
-    { id: 2, title: 'Day 02 - Warm Up', subtitle: '07:00 - 08:00 AM', image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400' },
-    { id: 3, title: 'Day 03 - Warm Up', subtitle: '07:00 - 08:00 AM', image: 'https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=400' },
+    { id: 1, title: 'Day 01 - Warm Up', subtitle: '07:00 - 08:00 AM', image: img1 },
+    { id: 2, title: 'Day 02 - Warm Up', subtitle: '07:00 - 08:00 AM', image: img2 },
+    { id: 3, title: 'Day 03 - Warm Up', subtitle: '07:00 - 08:00 AM', image: img3 },
   ];
 
   const yogaClasses = [
-    { id: 1, title: 'Learn the Basic of yoga', subtitle: '06 Asanas for Beginner', image: 'https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=400', isPro: false },
-    { id: 2, title: 'Learn the Basic of Training', subtitle: '06 Workouts for Beginner', image: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400', isPro: true },
-    { id: 3, title: 'Learn the Basic of Training', subtitle: '06 Workouts for Beginner', image: 'https://images.unsplash.com/photo-1540206395-68808572332f?w=400', isPro: true },
+    { id: 1, title: 'Learn the Basic of yoga', subtitle: '06 Asanas for Beginner', image: img4, isPro: false },
+    { id: 2, title: 'Learn the Basic of Training', subtitle: '06 Workouts for Beginner', image: img5, isPro: true },
+    { id: 3, title: 'Learn the Basic of Training', subtitle: '06 Workouts for Beginner', image: img6, isPro: true },
   ];
 
   const recommendedClasses = [
-    { id: 1, title: 'Day 01 - Warm Up', subtitle: 'Lorem ipsum is a dummy text', image: 'https://images.unsplash.com/photo-1545389336-cf090694435e?w=400', isPro: true },
-    { id: 2, title: 'Day 02 - Warm Up', subtitle: 'Lorem ipsum is a dummy text', image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400', isPro: true },
-    { id: 3, title: 'Day 01 - Warm Up', subtitle: 'Lorem ipsum is a dummy text', image: 'https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=400', isPro: false },
-    { id: 4, title: 'Day 02 - Warm Up', subtitle: 'Lorem ipsum is a dummy text', image: 'https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?w=400', isPro: true },
-    { id: 5, title: 'Day 01 - Warm Up', subtitle: 'Lorem ipsum is a dummy text', image: 'https://images.unsplash.com/photo-1603988363607-e1e4a66962c6?w=400', isPro: true },
+    { id: 1, title: 'Day 01 - Warm Up', subtitle: 'Lorem ipsum is a dummy text', image: img7, isPro: true },
+    { id: 2, title: 'Day 02 - Warm Up', subtitle: 'Lorem ipsum is a dummy text', image: img8, isPro: true },
+    { id: 3, title: 'Day 01 - Warm Up', subtitle: 'Lorem ipsum is a dummy text', image: img9, isPro: false },
+    { id: 4, title: 'Day 02 - Warm Up', subtitle: 'Lorem ipsum is a dummy text', image: img10, isPro: true },
   ];
 
   const tabOptions = ['Yoga Talks', 'Meditations', 'Teacher'];
@@ -50,8 +61,7 @@ function App() {
           </CardGrid>
         </section>
         <PromoCard
-          image="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800"
-          bannerText="1026 × 237.53"
+          image={img4}
           title="Get Accredited by"
           highlightText="Bodsphere"
         />
