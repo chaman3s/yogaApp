@@ -1,0 +1,10 @@
+.btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+

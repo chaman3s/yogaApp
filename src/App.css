@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Main Content */
+.main-content {
+  padding: 2rem 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Section Styles */
+.section {
+  margin-bottom: 3rem;
+}
+
+/* Tablet Responsive (768px - 1024px) */
+@media (max-width: 1024px) {
+  .main-content {
+    padding: 2rem;
+  }
+}
+
+/* Mobile Responsive (max 767px) */
+@media (max-width: 767px) {
+  .main-content {
+    padding: 1.5rem 1rem;
+  }
+}

@@ -1,0 +1,38 @@
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.tab {
+  padding: 0.7rem 1.5rem;
+  background-color: transparent;
+  border: none;
+  color: #999;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s;
+  font-family: inherit;
+}
+
+.tab:hover {
+  color: #fff;
+}
+
+.tab.active {
+  background-color: #ff4444;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .tabs {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tab {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+}
