@@ -1,16 +1,16 @@
-import './Header.css';
-import Text from '../ui/Text';
+import './Nav.css';
 import NavLink from '../ui/NavLink';
 import Badge from '../ui/Badge';
+import Image from '../ui/Image';
+import companyLogo from "../../assets/logo/logo.png"
 
-function Header() {
+function Nav() {
   return (
-    <header className="header">
+    <div className="nav">
       <div className="logo">
-        <Text variant="heading1" as="h1">BODSPHERE</Text>
-        <Text variant="tiny" color="muted">Your Fitness, Our Goal</Text>
+        <Image variant='logo' src={companyLogo} alt="Bodsphere Logo" />
       </div>
-      <nav className="nav">
+      <nav className="nav-links">
         <NavLink href="#" active>Home</NavLink>
         <NavLink href="#">Notification</NavLink>
         <NavLink href="#">Search</NavLink>
@@ -18,8 +18,8 @@ function Header() {
           <Badge variant="notification">4</Badge>
         </div>
       </nav>
-    </header>
+    </div>
   );
 }
 
-export default Header;
+export default Nav;

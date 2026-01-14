@@ -1,28 +1,38 @@
 .nav-link {
-  color: #fff;
+  color: #b0b0b0;
   text-decoration: none;
   font-size: 0.95rem;
-  transition: color 0.3s;
+  transition: color 0.2s ease;
   position: relative;
+  padding-bottom: 1.5rem;
+  font-weight: 400;
 }
 
-.nav-link:hover,
+.nav-link:hover {
+  color: #fff;
+}
+
 .nav-link.active {
-  color: #ff6b6b;
+  color: #fff;
 }
 
 .nav-link.active::after {
   content: '';
   position: absolute;
-  bottom: -0.5rem;
+  bottom:22px;
   left: 0;
   right: 0;
   height: 2px;
-  background-color: #ff6b6b;
+  background-color: #fff;
 }
 
 @media (max-width: 767px) {
   .nav-link {
     font-size: 0.85rem;
+    padding-bottom: 1rem;
+  }
+  
+  .nav-link.active::after {
+    height: 2px;
   }
 }

@@ -1,26 +1,84 @@
 .card {
   position: relative;
-  border-radius: 12px;
+  border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.2s ease;
   background-color: #2a2a2a;
+  aspect-ratio: 4/3;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transform: translateY(-3px);
+}
+
+.card-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card-content {
-  padding: 1rem;
-  background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.95) 100%);
   position: absolute;
+  display: flex;
+  flex-direction: column;
   bottom: 0;
   left: 0;
   right: 0;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 60%, transparent 100%);
 }
 
-.card-content h3 {
-  margin-bottom: 0.3rem;
+.card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+  line-height: 1.3;
+}
+
+.card-subtitle {
+  font-size: 0.95rem;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.3;
+}
+.card-subtitle::before{
+  content: "";
+  position: absolute;
+  height: 0.95rem;
+  
+  background: #FF5F67;
+    width: 2px;
+    top: 45px;
+    height: 3.5vh;
+    left: 9px;
+}
+.pro-badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background-color: #ffb800;
+  color: #000;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .card-title {
+    font-size: 0.85rem;
+  }
+  
+  .card-subtitle {
+    font-size: 0.75rem;
+  }
 }

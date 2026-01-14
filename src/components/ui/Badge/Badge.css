@@ -1,9 +1,12 @@
 .badge {
-  display: inline-block;
-  padding: 0.3rem 0.7rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.6rem;
   border-radius: 4px;
   font-size: 0.7rem;
   font-weight: 700;
+  line-height: 1;
 }
 
 .badge-default {
@@ -12,22 +15,19 @@
 }
 
 .badge-pro {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  background-color: #ffd700;
+  background-color: #ffb800;
   color: #000;
-  z-index: 1;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.7rem;
 }
 
 .badge-notification {
-  background-color: #ff4444;
+  background-color: #e74c3c;
   color: white;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 0;
+  font-size: 0.7rem;
+  font-weight: 600;
 }

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Header from './components/Header'
+import Nav from './components/Nav'
 import SectionHeader from './components/SectionHeader'
 import Card from './components/ui/Card'
 import CardGrid from './components/ui/CardGrid'
@@ -34,12 +34,8 @@ function App() {
 
   return (
     <div className="app">
-      {/* Header */}
-      <Header />
-
-      {/* Main Content */}
+      <Nav />
       <main className="main-content">
-        {/* Yoga Teacher Training Section */}
         <section className="section">
           <SectionHeader title="YOGA TEACHER TRAINING" actionText="See more" />
           <CardGrid columns="three">
@@ -75,7 +71,6 @@ function App() {
           </CardGrid>
         </section>
 
-        {/* Recommended Classes Section */}
         <section className="section">
           <SectionHeader title="RECOMMENDED CLASSES" actionText="View all" />
           <CardGrid columns="five">
